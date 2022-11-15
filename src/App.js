@@ -1,22 +1,36 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+
+} from "react-router-dom";
+import Home from "./pages/Home";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1> bienvenidos <span> a mi pagina </span></h1>
-      <div className="card" style={{width: "18rem"}}>
-        <img src="yop.jpg" className="card-img-top" alt="10" />
-        <div className="card-body">
-          <p className="card-text"> hola me llamo carol
-          <br></br>
-          tengo 17 años
-          <br></br>
-          tengo un hijo de 10 meses</p>
-        </div>
-      </div>
-      <button type="button" className="btn btn-outline-warning">descargar</button>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/lenguaje tecnico">lenguaje tecnico</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
 
-    </div>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Routes>
+          <Route path="/" element={<Home />}/>
+            
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
