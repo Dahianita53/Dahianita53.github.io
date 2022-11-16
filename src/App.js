@@ -22,8 +22,6 @@ function App() {
               <Link to="/lenguaje-tecnico">lenguaje tecnico</Link>
             </li>
           </ul>
-          <a href="https://github.com/Dahianita53" class="link">github</a>
-
         </nav>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
