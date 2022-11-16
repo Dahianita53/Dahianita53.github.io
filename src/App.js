@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import './App.css';
+import Lang from "./pages/Lang";
 
 function App() {
   return (
@@ -14,21 +15,24 @@ function App() {
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/lenguaje tecnico">lenguaje tecnico</Link>
+          <li>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/lenguaje-tecnico">lenguaje tecnico</Link>
             </li>
           </ul>
-        </nav>
+          <a href="https://github.com/Dahianita53" class="link">github</a>
 
+        </nav>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
+          <Route path="/lenguaje-tecnico" element={<Lang />}/>
             
         </Routes>
+
       </div>
     </Router>
   );
