@@ -16,7 +16,7 @@ function App() {
         <nav>
           <ul>
           <li>
-              <Link to="/">Home</Link>
+              <Link to="/">mi perfil</Link>
             </li>
             <li>
               <Link to="/lenguaje-tecnico">lenguaje tecnico</Link>
