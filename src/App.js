@@ -15,7 +15,7 @@ function App() {
       <div>
         <nav>
           <ul>
-          <li>
+            <li>
               <Link to="/">mi perfil</Link>
             </li>
             <li>
@@ -26,9 +26,9 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-        <Route path="/" element={<Home />}/>
-          <Route path="/lenguaje-tecnico" element={<Lang />}/>
-            
+          <Route path="/" element={<Home />} />
+          <Route path="/lenguaje-tecnico" element={<Lang />} />
+
         </Routes>
 
       </div>

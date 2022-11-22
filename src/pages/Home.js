@@ -11,7 +11,7 @@ function Home() {
                         <div className="card-body">
                             <p className="card-text"> hola me llamo carol
                                 <br></br>
-                                tengo 17 años 
+                                tengo 17 años
                             </p>
                         </div>
                     </div>
